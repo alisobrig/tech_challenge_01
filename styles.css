@@ -1,45 +1,105 @@
-/* Reset some default browser styles */
-html, body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
+/*overall adjustments*/
+        /* Reset some default browser styles */
+        html, body, h1, h2, p,{
+            margin: 0;
+            padding: 0;
+        }
 
-/* Apply a basic page background color and font style */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #daffcd;
-    color: #000000;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+        /*import font*/
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:800,300);
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: left;
-    padding: 1em 1em;
-}
+        /*indent list... worried about other screen sizes*/
+        ul, li {
+            margin-left: 0;
+            padding-left: 40x;
+        }
 
-/* Style the navigation menu */
-nav ul {
-    list-style: none;
-    text-align: left;
-    background-color: #444;
-    padding: 1em 1em;
-}
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
+        /* Apply a basic page background color and font style */
+        body {
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            background-color: #000000;
+            color: #74db60;
+            font-weight: 500;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
+      
+
+
+/*navigation style*/
+
+
+            .headercontainer {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            header {
+            background: #c4c8c4;
+            }
+
+            header::after {
+            content: '';
+            display: table;
+            clear: both;
+            }
+
+            .logo {
+            float: left;
+            padding: 10x 0;
+            color: #000000
+ 
+            }
+
+
+            nav {
+            float: ;
+            }
+
+            nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            }
+
+            nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 23px;
+
+            position: relative;
+            }
+
+            nav a {
+            color: #000000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            }
+
+    
+
+            nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            background-color: #000000;
+
+            position: absolute;
+            top: 0;
+            width: 0%;
+
+            transition: all ease-in-out 250ms;
+            }
+
+            nav a:hover::before {
+            width: 100%;
+            }
+
 
 /* Style the main content */
 main {
@@ -52,22 +112,44 @@ main {
 section h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #39FF14;
 }
 
 /* Style images within sections */
-section img {
-    max-width: 90%;
+#section1 img {
+    max-width: 40%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: auto;
 }
+
+#section2 img{
+    max-width: 40%;
+    height: auto;
+    display: block;   
+}
+
+/*link colors for list*/
+.list-links a:link {
+    color: #FE5892;
+  }
+  
+  /* visited link for list */
+  .list-links a:visited {
+    color: #64AC35;
+  }
+  
+  /* hover over link for*/
+  .list-links a:hover {
+    color: #FF932E;
+  }
+  
 
 /* Style the footer */
 footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-color: #c4c8c4;
+    color: #000000;
     padding: 10px 0;
 }
 
@@ -77,3 +159,121 @@ footer {
         padding: 10px;
     }
 }
+
+
+/*messing with chatgpt suggestions, this code is adjusted from chat gpt suggestions... how cool!*/
+/* Style for the image-text container */
+.image-text-container {
+    clear: both; /* Clear floats to prevent overlapping */
+    margin-bottom: 20px; /* Add some spacing between image-text containers */
+}
+
+/* Style for the images inside image-text containers */
+.image-text-container img {
+    float: right; /* Float the images to the right */
+    margin-left: 10px; /* Add some space to the left of the image */
+    max-width: 45%; /* Adjust the width as needed */
+}
+
+/* Style for the text inside image-text containers */
+.image-text {
+    max-width: 55%; /* Adjust the width as needed */
+}
+
+
+
+/*blockquote style adjusted from https://codepen.io/jimmycow/pen/LmjVaz*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+
+.otro-blockquote {
+  font-size: 1.05em; /* 25% smaller */
+  width: 60%; /* Adjust the width to make the callout box wider */
+  margin: 50px auto;
+  font-family: 'Open sans';
+  font-style: italic;
+  color: #000000;
+  padding: 0.9em 22.5px 0.9em 56.25px; /* 25% smaller */
+  border-left: 6px solid #3b7911; /* 25% smaller */
+  line-height: 1.6;
+  position: relative;
+  background: #c4c8c4;
+  border-radius: 11.25px; /* 25% smaller */
+}
+
+.otro-blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #3b7911;
+  font-size: 3em; /* 25% smaller */
+  position: absolute;
+  left: 7.5px; /* 25% smaller */
+  top: -7.5px; /* 25% smaller */
+}
+
+.otro-blockquote::after {
+  content: '';
+}
+
+.otro-blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 0.75em; /* 25% smaller */
+}
+
+
+/* Section 2 tabs style*/
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #fff;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #c4c8c4;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #c4c8c4;
+}
+
+.tabtext{
+    color: #000000;
+}
+
+label{
+    color: #000000
+}
+
+
+
+
+/*nagivation stuff*/
+
+
+
+

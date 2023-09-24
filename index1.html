@@ -1,0 +1,153 @@
+<!--Opening information and title of webpage-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ghost Hunting Technology</title>
+</head>
+
+<!--header and navigation-->
+<body>
+    <header>
+        <div class="headercontainer">
+          <h1 class="logo">Ghost Hunting Technology</h1>
+      
+          <nav>
+            <div class="w3-bar w3-black">
+                <ul>
+                    <li><a href="#section1" class="w3-bar-item w3-button w3-mobile"><strong>Overview</strong></a></li>
+                    <li><a href="#section2" class="w3-bar-item w3-button w3-mobile"><strong>Technology</strong></a></li>
+                    <li><a href="#section3" class="w3-bar-item w3-button w3-mobile"><strong>Resources</strong></a></li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+<!--Core of the website-->
+    <main>
+        <section id="section1">
+            <h2>Overview: Technology and Paranormal Investigation</h2>     
+            <p>
+                Although we often think of ghost hunting as unscienntific, the field of paranormal investigation shares an intimate history with the history of technology. Ghost hunters have continually applied new technologies and sciences to their investigations giving us a closer glimpse into our human connection to not-so-human objects. Today ghost hunters use many pieces of technology to track, measure, and understand the unseen, just as scientists do... though through far less empirical methods in most cases.
+             </p>
+            
+            <!--Added a fancy blockquote to help make my point-->
+            <blockquote class="otro-blockquote">
+                I think that ghosts have become the medium, so to speak, of how we approach and mediate our own relationship to technology. Through both antiquated or low grade or malfunctioning or misused technology, and also how we interpret new cutting edge technology as well.
+                <span>Colin Dickey, author of <em>Ghostland</em></span>
+              </blockquote>
+            <p>
+                This webpage offers an overview of a few pieces of ghost hunting technology. Whether you believe in ghosts or not, if you are a skeptic or a believer, these technologies offer an interesting case study into how we as humans endeavor to see the unseeable and know the yet unknown or uncertain.
+            </p>
+            <!--image of many pieces of tech that is also a link to the source of the image-->
+            <a href="https://www.ghoststop.com/spirit-box-ghost-hunting-kit/">
+                <img src="All_Technology.jpg" alt="A group of technological devices on a dark table">
+            </a>
+        </section>
+
+        <!--Styling the technology tabs... this was hard! I used some shared code from other developers and ChatGPT to troubleshoot. Still worried about accessibility, though I tried to add ARIA attributes. This section is a play on radio buttons and I'm not sure how a screen reader would experience that-->
+        <section id="section2">
+            <h2>Technology descriptions</h2>
+            <p>
+                Most technologies used in paranormal investigation are items you'd have around the house including
+                <ul>
+                    <li>Flashlights</li>
+                    <li>Audio recorder</li>
+                    <li>Video and photo cameras</li>
+                    <li>Walkie talkies</li>
+                    <li>Pen and notebook</li>
+                </ul>
+                For those invested in the practice (or those who are interested in gaining additional views online), specialized equipment exists that can collect different kinds of information while on site.
+            </p>
+
+        <!--tabs and their contents-->
+        <div class="mytabs">
+  
+            <input type="radio" id="tabfree" name="mytabs" checked="checked">
+            <label for="tabfree"; id="tabtext">Spirit Box</label>
+            <div class="tab" role="tabpanel" aria-labelledby="tabgold-label" aria-hidden="false">
+              <div class="image-text-container">
+                <a href="https://www.amazon.com/Spirit-Box-P-SB7-Ghost-Hunting/dp/B0036F9LUQ">
+                   <img src="Spirit_box.jpg" alt="A small, black spririt box">
+                </a>
+                   <div class="image-text">
+                       <h3 class="tabtext"><strong>Spirit Box</strong></h3>
+                       <p class="tabtext">Spirit boxes scan normal radio frequencies and present two options of communication to any entities in the area. First, ghosts are said to use the frequencies to choose particular shounds or words that are coming through the radio. Alternatively, ghosts may manipulate the frequencies to generate their own messages. These boxes come in many shapes and sizes but often look like a small handheld radio</p>
+                   </div>
+               </div>
+            </div>
+        
+            <input type="radio" id="tabsilver" name="mytabs">
+            <label for="tabsilver">EMF</label>
+            <div class="tab" role="tabpanel" aria-labelledby="tabgold-label" aria-hidden="true">
+              <div class="image-text-container">  
+                <a href ="https://www.walmart.com/ip/Adifare-EMF-Meter-High-Accuracy-Electromagnetic-Field-Radiation-Detector-Battery-Powered-Ghost-Hunting-Paranormal-Equipment-Tester-Industrial-Constru/1669128781">
+                  <img src="EMF_detector.jpg" alt="A black remote-like object with colorful lights">
+                </a>
+              <div class="image-text">
+                <h3 class="tabtext"><strong>EMF Detectors</strong></h3>
+                <p class="tabtext">
+                  Typically used to check home appliances, EMF, or electromagnetic frequency, detectors can be a useful tool for ghost hunting. EMF detector spikes have been attirbuted with paranormal activity and may be used to collect more information during an investigation
+                </p>
+            </div>
+        </div>
+        </div>
+        
+            <input type="radio" id="tabgold" name="mytabs">
+            <label for="tabgold">SLS</label>
+            <div class="tab" role="tabpanel" aria-labelledby="tabgold-label" aria-hidden="true">
+              <div class="image-text-container">  
+                <a href="https://www.ign.com/articles/xbox-kinect-ghost-hunters">
+                    <img src="SLS_image.jpg" alt="The ouput of an SLS camera, a stick figure standing in darkness">
+                  </a>
+                 <div class="image-text">
+                <h3 class="tabtext"><strong>SLS Camera</strong></h3>
+                <p class="tabtext">
+                    This camera was originally introduced as a video game technology in devices such as the Xbox Kinect. The camera is able to detect humanoid figures by putting out thousands of small points of light that get interrupted to form a picutre. Many investigators, espeically those famous online and on TV, use this device to show more visual evidence of ghosts.
+                </p>
+            </div>
+        </div>
+        </div>
+        
+           <input type="radio" id="tabblack" name="mytabs">
+           <label for="tabblack">Ovilus</label>
+           <div class="tab" role="tabpanel" aria-labelledby="tabgold-label" aria-hidden="true">
+            <div class="image-text-container"> 
+              <a href="https://www.kqed.org/news/11701114/a-lighthouse-so-beautiful-ghosts-come-back-to-haunt-it">
+                  <img src="ovilus.jpg" alt="Ovilus, a square device with two antennae and words 'walter, nana, do' shown on a screen">
+              </a>
+              <div class="image-text">
+              <h3 class="tabtext"><strong>The Ovilus </strong></h3>
+              <p class="tabtext">
+                Finally, and my personal favorite, is the Ovilus. This device records information about temperagure and magnetic fields and outputs associated words from a library. Who decides this library? Can a ghost actually "talk" through thse means? Who's to say. The device is interesting nonetheless as another possible avenue for collecting information from the dearly departed.
+            </p>
+          </div>
+        </div>
+        </div>
+        
+          </div>
+
+        <section id="section3">
+            <h2>Links and Resources</h2>
+            <p>While I summarize a few interesting technologies here, there is so much more to explore! The links below will help you continue your hunt for knowledge about ghost hunting technologies.</p>
+
+            <ul class="list-links">
+                <li><a href = "https://www.ghoststop.com/kits/">Ghost Stop</a></li>
+                <li><a href = "https://www.npr.org/2011/10/31/141868232/paranormal-technology-gadgets-for-ghost-tracking">NPR "Gadgets for Ghost Tracking"</a></li>
+                <li><a href = "https://sciencehistory.org/stories/distillations-pod/ghost-hunting-in-the-19th-century/">History of ghost hunting podcast from Distillations</a></li>
+                <li><a href = "https://www.audacy.com/podcasts/distillations-science-history-institute-49506/interview-with-colin-dickey-546549758">Interview with Collin Dickey</a></li>
+            </ul>
+        </section>
+   
+    </main>
+
+
+
+    <footer>
+        <p>2023 Alison</p>
+    </footer>
+</body>
+</html>
